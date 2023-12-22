@@ -13,13 +13,13 @@ document.getElementById("navbar").innerHTML = `
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a id="home" class="nav-link" href="/index.html">Home</a>
+            <a id="home" class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a id="objectives" class="nav-link" href="/objectives.html">Objectives</a>
+            <a id="objectives" class="nav-link" href="./objectives.html">Objectives</a>
           </li>
           <li class="nav-item">
-            <a id="team" class="nav-link" href="/team.html">Team</a>
+            <a id="team" class="nav-link" href="./team.html">Team</a>
           </li>
         </ul>
       </div>

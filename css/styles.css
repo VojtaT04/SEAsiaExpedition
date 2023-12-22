@@ -1,0 +1,59 @@
+main > .container {
+  padding: 1rem 1rem 3rem;
+  color: #e9ecef;
+}
+body {
+  background-color: #172137;
+}
+header {
+  background-color: #223A65;
+}
+
+.nav-link {
+  color: #e9ecef;
+}
+.nav-link.active {
+  color: #b6b9bc !important;
+}
+
+
+.hidden > .hiddenEl {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show > .hiddenEl {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+#Tomas > .hiddenEl:nth-child(2) {
+  transition-delay: 300ms;
+}
+#Vojta > .hiddenEl:nth-child(2) {
+  transition-delay: 300ms;
+}
+#Ondra > .hiddenEl:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+@media (min-width: 992px) {
+  main > .container {
+    font-size: calc(1.5 * var(--bs-body-font-size));
+  }
+  .lead {
+    font-size: calc(1.75 * var(--bs-body-font-size));
+  }
+  .navbar {
+    font-size: calc(1.25 * (var(--bs-body-font-size)));
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
